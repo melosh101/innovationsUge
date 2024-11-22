@@ -1,0 +1,18 @@
+{
+  "name": "websocket",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch index.ts --exec bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.7",
+    "redis": "^4.7.0"
+  }
+}
