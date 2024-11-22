@@ -1,8 +1,4 @@
-import useWebSocket from 'react-use-websocket'
 function App() {
-  const { lastMessage } = useWebSocket("ws://localhost:3001", { reconnectInterval: 3e3, reconnectAttempts: 10, shouldReconnect: () => true })
-  console.log(Number.parseInt(lastMessage?.data))
-  console.log(lastMessage?.data)
   return (
     <>
       <main>
